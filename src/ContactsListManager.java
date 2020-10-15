@@ -30,9 +30,9 @@ public class ContactsListManager {
     }
 
     public boolean editContact(int phoneNumber, String fullName, String group, String gender, String address, String dateOfbirth, String email){
+        Contact contact;
         for (Contact ele : listContacts){
             if (ele.getPhoneNumber() == phoneNumber){
-                ele = new Contact(phoneNumber,fullName,group,gender,address,dateOfbirth,email);
                 ele.setFullName(fullName);
                 ele.setGender(gender);
                 ele.setAddress(address);

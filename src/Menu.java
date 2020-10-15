@@ -71,6 +71,11 @@ public class Menu {
             case 4:
                 phoneNumber = inputer.inputInt("Nhập sdt cần xóa");
                 manager.deleteContact(phoneNumber);
+                try {
+                    manager.addDataToFile();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 break;
             case 5:
                 phoneNumber = inputer.inputInt("số cần tìm: ");
