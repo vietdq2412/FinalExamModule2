@@ -23,7 +23,7 @@ public class Inputer {
         return value;
     }
 
-    public  String inputString(String message) {
+    public static String inputString(String message) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(message);
         return scanner.nextLine();

@@ -73,6 +73,9 @@ public class Menu {
                 manager.deleteContact(phoneNumber);
                 break;
             case 5:
+                phoneNumber = inputer.inputInt("số cần tìm: ");
+                Contact rs = manager.searchContact(phoneNumber);
+                System.out.println(rs.toString());
                 break;
             case 6:
                 break;

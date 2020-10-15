@@ -24,6 +24,7 @@ public class ContactsListManager {
         }
         for (Contact ele : listContacts) {
             System.out.println(ele.toString());
+            Inputer.inputString("Enter to continue");
         }
         return true;
     }
@@ -65,24 +66,13 @@ public class ContactsListManager {
         }
         return false;
     }
-
-//    public void searchContactByPhoneNumber(String name) {
-//        int[] index = new int[products.size()];
-//        int count = 0;
-//        boolean exsit = true;
-//
-//        for (Product e : products) {
-//            if (e.getName().equals(name)) {
-//                System.out.println(e.toString());
-//                return;
-//            }else {
-//                exsit = false;
-//            }
-//        }
-//        if (!exsit){
-//            System.out.println("not found!");
-//        }
-//    }
+    public Contact searchContact(int phoneNumber){
+        Contact contact = new Contact();
+        for (Contact ele : listContacts){
+            contact = ele;
+        }
+        return contact;
+    }
 
 
     public void addDataToFile() throws IOException {
